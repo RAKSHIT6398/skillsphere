@@ -1,7 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "description": "",
   "main": "seed.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
@@ -10,8 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.10.0",
@@ -28,7 +28,6 @@
     "nodemailer": "^9.0.3",
     "qrcode": "^1.5.4",
     "razorpay": "^2.9.6",
-    "skillsphere": "file:..",
     "socket.io": "^4.8.3",
     "speakeasy": "^2.0.0",
     "streamifier": "^0.1.1"
