@@ -60,8 +60,8 @@ const Footer = () => {
             </Link>
 
             <p className="text-sm leading-relaxed mb-5 max-w-xs">
-              India ka #1 intelligent hyperlocal freelance ecosystem.
-              AI-powered matching se sahi kaam aur sahi freelancer connect hota hai.
+              India's #1 intelligent hyperlocal freelance ecosystem. 
+              AI-powered matching connects the right work with the right freelancer.
             </p>
 
             {/* Social Links */}
@@ -86,10 +86,10 @@ const Footer = () => {
               <p className="flex items-center space-x-2">
                 <span>📧</span>
                 <a
-                  href="mailto:support@skillsphere.in"
+                  href="mailto:skillsphere@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  support@skillsphere.in
+                  skillsphere@gmail.com
                 </a>
               </p>
               <p className="flex items-center space-x-2">
@@ -140,16 +140,16 @@ const Footer = () => {
                           justify-between gap-4">
             <div>
               <h4 className="text-white font-semibold mb-1">
-                📬 Newsletter Subscribe Karo
+                📬 Subscribe to our Newsletter
               </h4>
               <p className="text-sm text-gray-500">
-                Latest jobs aur tips seedhe inbox mein pao
+                Get the latest jobs and updates delivered straight to your inbox
               </p>
             </div>
             <div className="flex w-full md:w-auto">
               <input
                 type="email"
-                placeholder="aapka@email.com"
+                placeholder="your@email.com"
                 className="flex-1 md:w-64 bg-gray-800 border border-gray-700
                            text-white rounded-l-lg px-4 py-2.5 text-sm
                            focus:outline-none focus:border-blue-500
@@ -173,7 +173,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center
                           justify-between gap-3 text-sm">
             <p>
-              © {currentYear} SkillSphere. Sab rights reserved.
+              © {currentYear} SkillSphere. All rights reserved.
               Made with ❤️ in India 🇮🇳
             </p>
             <div className="flex items-center space-x-4">
