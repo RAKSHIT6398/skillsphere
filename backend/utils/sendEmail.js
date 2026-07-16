@@ -2,13 +2,15 @@ import nodemailer from "nodemailer";
 
 const sendEmail = async ({ to, subject, html }) => {
   const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: Number(process.env.EMAIL_PORT), // <--- Isko Number() mein wrap karo
-    secure: process.env.EMAIL_PORT === "465", // Port 465 hai toh true, 587 hai toh false
+    host: "smtp.gmail.com", // Direct host likh do variables ki jagah
+    port: 465,             // Secure Port 465 use karo
+    secure: true,          // 465 ke liye hamesha true
     auth: { 
       user: process.env.EMAIL_USER, 
       pass: process.env.EMAIL_PASS 
     },
+    // IPv4 force karne ke liye (ENETUNREACH fix)
+    connectionTimeout: 10000, 
   });
 
   await transporter.sendMail({ 
