@@ -68,17 +68,7 @@ export default function ForgotPassword() {
           </button>
         </form>
 
-        {/* Footer */}
-        <div className="p-8 pt-4 text-center">
-          <button
-            onClick={() => nav("/login")}
-            className="inline-flex items-center gap-1 text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Login
-          </button>
-        </div>
-
+       
       </div>
     </div>
   );
