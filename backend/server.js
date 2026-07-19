@@ -31,7 +31,10 @@ app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(express.json({ limit: "5mb" }));
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 500 }));
-
+console.log("HOST =", process.env.SMTP_HOST);
+console.log("PORT =", process.env.SMTP_PORT);
+console.log("USER =", process.env.SMTP_USER);
+console.log("FROM =", process.env.EMAIL_FROM);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/gigs", gigRoutes);
